@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Design Work</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="photo.html">Photography</a>
+    <a href="fine-art.html">Fine Art</a>
+    <a href="design.html">Design</a>
+    <a href="video.html">Video</a>
+    <div class="subnav">
+      <button class="subnavbtn">Interactive Projects<i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="https://abreinke.github.io/sound-machine/">Storm Symphony</a>
+        <a href="https://abreinke.github.io/drawingmachine/">Night Insects</a>
+        <a href="https://alicia-breinke.github.io/sequence/">Sequence</a>
+      </div>
+    </div>
+      <div class="subnav">
+        <button class="subnavbtn">3D Projects<i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="https://alicia-breinke.github.io/3d-modal/">Guiding Lights</a>
+      </div>
+    </div>
+      <div class="subnav">
+        <button class="subnavbtn">Connect with Me<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="mailto:abreinke@yahoo.com">Email Me</a>
+          <a href="https://www.linkedin.com/in/alicia-breinke/">Connect With Me on LinkedIn</a>
+          <a href="https://www.instagram.com/abtheavidartist/">Follow Me on Instagram</a>
+        </div>
+      </div>
+        <div class="subnav">
+          <button class="subnavbtn">About Me<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="artist-background.html">Artist Background</a>
+            <a href="artist-cv.html">Artist CV</a>
+          </div>
+        </div>
+      </div>
+
+    <header>
+      <h1>Design Projects</h1>
+    </header>
+
+<div class="row">
+  <div class="column-3">
+      <img src="cranes.jpg" alt="Flight" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="tahoe.jpg" alt="Tahoe" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="waves.jpg" alt="Waves" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="vortex.jpg" alt="Vortex" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="buzz.jpg" alt="Buzz" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="sunburst.jpg" alt="Sunburst" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="type.jpg" alt="Serenity" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="gull.jpg" alt="Sea and Sky" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="meeting.jpg" alt="CADRE Meeting Concept" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="concept1.jpg" alt="CADRE Halloween Event Concept I" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="concept2.jpg" alt="CADRE Halloween Event Concept II" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column-3">
+    <img src="concept3.jpg" alt="CADRE Halloween Event Concept III" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:60%;max-width:600px">
+    <div id="imgtext"></div>
+  </div>
+
+    <script>
+
+    function myFunction (imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+
+  </script>
+
+</body>
+</html>
